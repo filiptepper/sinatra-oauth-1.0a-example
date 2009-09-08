@@ -1,0 +1,12 @@
+h1. Sinatra OAuth 1.0a Example
+
+A simple Sinatra-based example of OAuth 1.0a consumer. If you provide OAuth via oauth-plugin in your Ruby on Rails app make sure that you use a bugfixed version (available in my "fork":http://github.com/filiptepper/oauth-plugin/tree/master).
+
+h2. Setup
+
+All you need to do is to configure your OAuth provider data
+<pre><code>@consumer ||=OAuth::Consumer.new "YOUR-KEY-GOES-HERE", "YOUR-SECRET-GOES-HERE", {
+  :site => "YOUR-URL-GOES-HERE.com"
+}</code></pre>
+
+That's it? Yep!
